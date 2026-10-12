@@ -32,3 +32,7 @@ Four primary pages, four project details, unknown-route handling, active navigat
 ## Environment
 
 Use this task's existing isolated checkout; do not create a worktree. Dependency files survive snapshots; running development servers must be started again. No secret or backend is required for this frontend.
+
+## Black and gold redesign
+
+All routes use obsidian surfaces, antique gold accents and warm ivory text. Local Amiri display fonts and Vazirmatn body fonts support Persian RTL typography without third-party font requests. `src/Heritage.tsx` contains original decorative SVG illustrations inspired by Persepolis double-animal capitals, fluted columns and lotus reliefs; these are contemporary interpretations, not archaeological reproductions. Decorations are hidden from assistive technology. Reduced-motion handling and existing functional controls are preserved.
