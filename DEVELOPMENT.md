@@ -36,3 +36,9 @@ Use this task's existing isolated checkout; do not create a worktree. Dependency
 ## Black and gold redesign
 
 All routes use obsidian surfaces, antique gold accents and warm ivory text. Local Amiri display fonts and Vazirmatn body fonts support Persian RTL typography without third-party font requests. `src/Heritage.tsx` contains original decorative SVG illustrations inspired by Persepolis double-animal capitals, fluted columns and lotus reliefs; these are contemporary interpretations, not archaeological reproductions. Decorations are hidden from assistive technology. Reduced-motion handling and existing functional controls are preserved.
+
+## Obsidian / Royal Gold / Imperial Purple design system
+
+The exact requested palette and semantic typography, overlay, border and artwork tokens live in `:root` in `src/style.css`. All UI colors reference these tokens; the existing conceptual architecture SVG retains its own illustration colors. Buttons support primary gold and secondary outline variants. Project cards, form fields, navigation, error/focus states and all four pages share the palette. Purple is limited to ambient backgrounds rather than body text or primary actions.
+
+`public/images/achaemenid-architect.webp` is AI-generated decorative artwork inspired by Achaemenid reliefs: a robed guard holding architectural drawings instead of a spear. It is an artistic interpretation, not a verified historical reconstruction or a company project photograph. The desktop artwork is ~106 KiB; the mobile version ~25 KiB. CSS draws it once behind the interface using a noninteractive pseudo-element, dark overlays and no repeat. It is viewport-fixed on desktop and absolute on mobile; no scroll animation or JavaScript is needed. Fonts and artwork are local. Functional tests cover the exact tokens, background asset responses and reduced-motion/mobile behavior in addition to existing route/form/lightbox checks.
